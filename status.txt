@@ -1,13 +1,10 @@
-when: 2026-11-15T22:03:57Z
+when: 2026-11-15T22:13:58Z
 run: 43758442243
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
-ts (0 current), 0.00 MB, 0 msgs
-
-Stats for 15.11.2026 21:03:37
-hesam: 1 connects (0 current), 0.00 MB, 9 msgs
+(0 current), 0.00 MB, 9 msgs
 
 New IPs:
 ::1
@@ -28,6 +25,9 @@ Stats for 15.11.2026 21:53:38
 hesam: 11 connects (0 current), 0.13 MB, 236 msgs
 
 Stats for 15.11.2026 22:03:38
+hesam: 12 connects (0 current), 0.14 MB, 238 msgs
+
+Stats for 15.11.2026 22:13:38
 hesam: 12 connects (0 current), 0.14 MB, 238 msgs
 --- bore ---
 [0me226a7c5-c8af-4c2a-8f5d-9961ecbdbe03[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited

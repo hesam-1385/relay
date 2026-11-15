@@ -1,8 +1,8 @@
-when: 2026-11-15T17:19:48Z
+when: 2026-11-15T17:28:50Z
 run: 43726420750
 public-port: 38841
 fixed-port-target: 38841
-note: heartbeat
+note: bore restarted
 --- mtp ---
 sgs
 
@@ -27,8 +27,5 @@ hesam: 672 connects (0 current), 85.34 MB, 72743 msgs
 Stats for 15.11.2026 17:19:16
 hesam: 672 connects (0 current), 85.34 MB, 72743 msgs
 --- bore ---
-[0me744f6cf-153c-46f9-bce0-3fa044d8fd8f[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-15T17:13:35.123467Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m134d6456-b585-4669-aba2-54c579f1ca4a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T17:13:38.108453Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m134d6456-b585-4669-aba2-54c579f1ca4a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-15T17:17:07.127149Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m7399c06c-6d98-4794-97ab-1216f3c68feb[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T17:17:08.541887Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m7399c06c-6d98-4794-97ab-1216f3c68feb[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-15T17:28:50.062581Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
+[2m2026-11-15T17:28:50.062624Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841

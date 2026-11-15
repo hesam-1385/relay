@@ -1,13 +1,10 @@
-when: 2026-11-15T16:09:37Z
+when: 2026-11-15T16:19:38Z
 run: 43726420750
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
-:1
-
-Stats for 15.11.2026 15:09:16
-hesam: 188 connects (9 current), 22.90 MB, 21812 msgs
+gs
 
 Stats for 15.11.2026 15:19:16
 hesam: 339 connects (17 current), 36.66 MB, 38254 msgs
@@ -26,8 +23,11 @@ hesam: 500 connects (5 current), 58.00 MB, 56628 msgs
 
 Stats for 15.11.2026 16:09:16
 hesam: 500 connects (0 current), 58.19 MB, 56722 msgs
+
+Stats for 15.11.2026 16:19:16
+hesam: 500 connects (0 current), 58.19 MB, 56722 msgs
 --- bore ---
  connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
-[2m2026-11-15T16:09:13.255274Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0me3d91eb9-7e93-492b-b1ea-4121e27a1e99[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
-[2m2026-11-15T16:09:20.636074Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m11369d13-786e-4c3e-9a3b-08cfb22b662f[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
-[2m2026-11-15T16:09:28.399233Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m05c5b1d1-59e2-4a00-99a9-9e846c6fde48[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
+[2m2026-11-15T16:14:47.260781Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m9c851233-97e2-4779-808b-2741f3dfdddc[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
+[2m2026-11-15T16:14:56.758194Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m4c88cdad-a697-44e0-aaa6-ce20457cde66[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
+[2m2026-11-15T16:15:37.034679Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mab5aa2b5-d8ab-4401-bb00-e9734dddab19[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)

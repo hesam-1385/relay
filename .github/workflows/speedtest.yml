@@ -1,0 +1,33 @@
+name: speedtest
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  s:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: run
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -u
+          curl -fsSL -o /tmp/bore.tgz https://github.com/ekzhang/bore/releases/download/v0.6.0/bore-v0.6.0-x86_64-unknown-linux-musl.tar.gz
+          mkdir -p /tmp/bx && tar -xzf /tmp/bore.tgz -C /tmp/bx
+          B="$(find /tmp/bx -type f -name 'bore*' | head -1)"; chmod +x "$B"
+          mkdir -p /tmp/www && head -c 8388608 /dev/urandom > /tmp/www/8mb.bin
+          cd /tmp/www && nohup python3 -m http.server 8099 >/tmp/http.log 2>&1 &
+          sleep 2
+          nohup "$B" local 8099 --to bore.pub >/tmp/bore.log 2>&1 &
+          P=""
+          for i in $(seq 1 30); do P="$(grep -o 'bore.pub:[0-9]*' /tmp/bore.log | head -1 | cut -d: -f2 || true)"; [ -n "$P" ] && break; sleep 2; done
+          echo "PORT=$P"; echo "$P" > /tmp/p.txt
+          API="https://api.github.com/repos/$GITHUB_REPOSITORY"
+          SHA="$(curl -s -H "Authorization: Bearer $GH_TOKEN" "$API/contents/speed.txt" | python3 -c 'import sys,json;print(json.load(sys.stdin).get("sha",""))' 2>/dev/null || true)"
+          BODY="$(printf 'port: %s\nrun: %s\n' "$P" "$GITHUB_RUN_ID")"
+          if [ -n "$SHA" ]; then J="$(python3 -c 'import sys,json,base64;b=open("/tmp/b.txt").read();print(json.dumps({"message":"speed","content":base64.b64encode(b.encode()).decode(),"sha":sys.argv[1]}))' "$SHA")"; else J=""; fi
+          printf '%s' "$BODY" > /tmp/b.txt
+          if [ -n "$SHA" ]; then J="$(python3 -c 'import sys,json,base64;b=open("/tmp/b.txt").read();print(json.dumps({"message":"speed","content":base64.b64encode(b.encode()).decode(),"sha":sys.argv[1]}))' "$SHA")"; else J="$(python3 -c 'import json,base64;b=open("/tmp/b.txt").read();print(json.dumps({"message":"speed","content":base64.b64encode(b.encode()).decode()}))')"; fi
+          curl -s -o /dev/null -X PUT -H "Authorization: Bearer $GH_TOKEN" "$API/contents/speed.txt" -d "$J" || true
+          sleep 900

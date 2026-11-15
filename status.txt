@@ -1,11 +1,10 @@
-when: 2026-11-15T15:19:28Z
+when: 2026-11-15T15:29:31Z
 run: 43726420750
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
-72.213.162&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
-hesam: tg://proxy?server=20.72.213.162&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+=20.72.213.162&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=20.72.213.162&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1997
 Stats for 15.11.2026 14:59:16
@@ -19,9 +18,12 @@ hesam: 188 connects (9 current), 22.90 MB, 21812 msgs
 
 Stats for 15.11.2026 15:19:16
 hesam: 339 connects (17 current), 36.66 MB, 38254 msgs
+
+Stats for 15.11.2026 15:29:16
+hesam: 417 connects (6 current), 48.33 MB, 49943 msgs
 --- bore ---
-m=[0m444a533e-9548-4d4b-95a3-b47c9197707b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T15:19:20.386525Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m93768f8d-fbb1-4fcd-bd0d-dce437c55117[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-15T15:19:20.780194Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m93dbe887-05c9-400b-ae3f-c4fca369ce56[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-15T15:19:24.556789Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m0b3f7728-9005-48a2-a4e5-19beb16f32d9[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T15:19:26.045388Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m0c6fca2b-820a-43c9-bb2d-58983348148e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m=[0me81cd391-1b77-4839-87e4-adad2d01934f[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:29:18.183848Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m2ee75f32-10c1-4f57-aa11-96644da8c571[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:29:23.795005Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0md6d81dbc-e360-4a76-8aa7-ce84b9163a62[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-15T15:29:24.807312Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb68b6df5-b8a3-42aa-b89e-3eb5f5957407[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:29:24.883972Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m127de58b-4b11-45b4-8cc6-b0708db11f20[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

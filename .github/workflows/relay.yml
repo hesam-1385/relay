@@ -1,7 +1,7 @@
 name: relay
 
 # پروکسی تلگرام همیشه-روشن: هر ران ۵ ساعت و ۴۸ دقیقه کار می‌کند،
-# ۸ دقیقه قبل از پایان، ران بعدی را خودش استارت می‌زند (زنجیره‌ای) تا وقفه نیفتد.
+# ۶ دقیقه قبل از پایانش ران بعدی را خودش استارت می‌زند تا وقفه نیفتد.
 on:
   workflow_dispatch:
   schedule:
@@ -34,46 +34,44 @@ jobs:
           bore --version
 
       - name: run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -u
           SECRET="${MTP_SECRET:-e5c1a7b93d24f60e8a71cb3f9d024e68}"
-          # اگر ران دیگری همین حالا پورت را گرفته، کاری نکن
-          if python3 - "$PORT" <<'PY'
-          import socket,sys
-          try:
-              s=socket.create_connection(("bore.pub",int(sys.argv[1])),8); s.close(); sys.exit(0)
-          except Exception: sys.exit(1)
-          PY
-          then
-            echo "پورت از قبل باز است؛ ران دیگری فعال است. خارج می‌شوم."
-            exit 0
-          fi
 
           printf 'PORT = 3129\nUSERS = {"hesam": "%s"}\nMODES = {"classic": True, "secure": True, "tls": True}\nTLS_DOMAIN = "cloudflare.com"\n' "$SECRET" > /tmp/cfg.py
+
           start_mtp() {
-            pkill -f mtprotoproxy.py 2>/dev/null || true
-            pkill -f 'mtp.py' 2>/dev/null || true
+            pkill -f '/tmp/mtp.py' 2>/dev/null || true
             sleep 1
             nohup python3 /tmp/mtp.py /tmp/cfg.py > /tmp/mtp.log 2>&1 &
           }
+
+          # تا ۱۰ دقیقه تلاش می‌کند پورت ثابت را بگیرد (اگر ران قبلی هنوز پورت را دارد صبر می‌کند)
           start_bore() {
-            pkill -f 'bore local' 2>/dev/null || true
-            sleep 2
-            nohup bore local 3129 --to bore.pub --port "$PORT" > /tmp/bore.log 2>&1 &
-            for i in $(seq 1 30); do
-              grep -q "listening at bore.pub:$PORT" /tmp/bore.log && return 0
-              sleep 2
+            for try in $(seq 1 40); do
+              pkill -f 'bore local' 2>/dev/null || true
+              sleep 1
+              : > /tmp/bore.log
+              nohup bore local 3129 --to bore.pub --port "$PORT" > /tmp/bore.log 2>&1 &
+              for i in $(seq 1 15); do
+                grep -q "listening at bore.pub:$PORT" /tmp/bore.log && { echo "bore روی پورت $PORT بالا آمد"; return 0; }
+                pgrep -f 'bore local' >/dev/null || break
+                sleep 1
+              done
+              echo "تلاش $try ناموفق، ۱۵ ثانیه صبر"
+              sleep 15
             done
             return 1
           }
-          start_mtp; sleep 4
-          if ! start_bore; then echo "bore نتوانست پورت ثابت را بگیرد، تلاش دوباره"; sleep 20; start_bore || true; fi
-          echo "--- ALL SET ---"
-          tail -3 /tmp/bore.log; tail -2 /tmp/mtp.log
+
+          start_mtp; sleep 5
+          start_bore || echo "bore بعد از ۱۰ دقیقه هم پورت را نگرفت"
 
           START=$(date +%s)
-          CHAIN=$((348*60-360))   # دقیقه ۳۴۲: ران بعدی را استارت بزن
-          END=$((348*60))         # دقیقه ۳۴۸: پورت را آزاد کن
+          CHAIN=$((345*60))   # دقیقه ۳۴۵: ران بعدی را استارت بزن
+          END=$((352*60))     # دقیقه ۳۵۲: پورت را آزاد کن (ران بعدی جایش را می‌گیرد)
           while :; do
             NOW=$(( $(date +%s) - START ))
             [ "$NOW" -ge "$END" ] && break
@@ -85,13 +83,13 @@ jobs:
                 "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/relay.yml/dispatches" \
                 -d '{"ref":"main"}' || true
             fi
-            # نگهبان: اگر پروکسی یا تونل مرد، از نو بالا بیاور
-            if ! pgrep -f 'mtp.py' >/dev/null; then echo "$(date -u +%T) mtproto مرد، ری‌استارت"; start_mtp; sleep 3; fi
-            if ! pgrep -f 'bore local' >/dev/null; then echo "$(date -u +%T) bore مرد، ری‌استارت"; start_bore || true; fi
+            if ! pgrep -f '/tmp/mtp.py' >/dev/null; then echo "$(date -u +%T) mtproto مرد، ری‌استارت"; start_mtp; sleep 3; fi
+            if ! grep -q "listening at bore.pub:$PORT" /tmp/bore.log 2>/dev/null || ! pgrep -f 'bore local' >/dev/null; then
+              echo "$(date -u +%T) bore مرد، ری‌استارت"
+              start_bore || true
+            fi
             sleep 60
           done
-          echo "پایان ران؛ آزادکردن پورت"
+          echo "پایان ران؛ آزادکردن پورت برای ران بعدی"
           pkill -f 'bore local' 2>/dev/null || true
-          sleep 2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          sleep 3

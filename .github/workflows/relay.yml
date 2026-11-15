@@ -1,15 +1,16 @@
 name: relay
 
-# پروکسی تلگرام همیشه-روشن: هر ران ۵ ساعت و ۴۸ دقیقه کار می‌کند،
-# ۶ دقیقه قبل از پایانش ران بعدی را خودش استارت می‌زند تا وقفه نیفتد.
+# پروکسی MTProto همیشه-روشن روی گیت‌هاب اکشنز:
+# هر ران ~۵ ساعت و ۴۵ دقیقه کار می‌کند، ۵ دقیقه قبل از پایانش ران بعدی را خودش استارت می‌زند
+# و ۲ دقیقه آخر پورت را آزاد می‌کند تا ران بعدی همان پورت ثابت را بگیرد.
 on:
   workflow_dispatch:
   schedule:
-    - cron: '13 */3 * * *'   # فقط پشتیبان؛ اگر زنجیره پاره شد حداکثر ۳ ساعت بعد وصل می‌شود
+    - cron: '17 */3 * * *'   # پشتیبان: اگر زنجیره پاره شد حداکثر ۳ ساعت بعد وصل می‌شود
 
 permissions:
   actions: write
-  contents: read
+  contents: write
 
 concurrency:
   group: relay
@@ -32,64 +33,94 @@ jobs:
           tar -xzf /tmp/bore.tgz -C /tmp/bx
           sudo install -m755 "$(find /tmp/bx -type f -name 'bore*' | head -1)" /usr/local/bin/bore
           bore --version
+          python3 -c "import sys;print(sys.version)"
 
       - name: run
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -u
           SECRET="${MTP_SECRET:-e5c1a7b93d24f60e8a71cb3f9d024e68}"
-
+          API="https://api.github.com/repos/$GITHUB_REPOSITORY"
           printf 'PORT = 3129\nUSERS = {"hesam": "%s"}\nMODES = {"classic": True, "secure": True, "tls": True}\nTLS_DOMAIN = "cloudflare.com"\n' "$SECRET" > /tmp/cfg.py
+
+          publish() {  # $1 = extra note
+            BODY="$(printf 'when: %s\nrun: %s\npublic-port: %s\nfixed-port-target: %s\nnote: %s\n--- mtp ---\n%s\n--- bore ---\n%s\n' \
+              "$(date -u +%FT%TZ)" "$GITHUB_RUN_ID" "${PUBPORT:-none}" "$PORT" "$1" \
+              "$(tail -c 600 /tmp/mtp.log 2>/dev/null)" "$(tail -c 900 /tmp/bore.log 2>/dev/null)")"
+            printf '%s' "$BODY" > /tmp/st.txt
+            SHA="$(curl -s -H "Authorization: Bearer $GH_TOKEN" "$API/contents/status.txt" | python3 -c 'import sys,json;d=json.load(sys.stdin);print(d.get("sha",""))' 2>/dev/null || true)"
+            if [ -n "$SHA" ]; then
+              J="$(python3 -c 'import sys,json,base64;body=open("/tmp/st.txt").read();print(json.dumps({"message":"status","content":base64.b64encode(body.encode()).decode(),"sha":sys.argv[1]}))' "$SHA")"
+            else
+              J="$(python3 -c 'import json,base64;body=open("/tmp/st.txt").read();print(json.dumps({"message":"status","content":base64.b64encode(body.encode()).decode()}))')"
+            fi
+            curl -s -o /dev/null -X PUT -H "Authorization: Bearer $GH_TOKEN" "$API/contents/status.txt" -d "$J" || true
+          }
 
           start_mtp() {
             pkill -f '/tmp/mtp.py' 2>/dev/null || true
             sleep 1
             nohup python3 /tmp/mtp.py /tmp/cfg.py > /tmp/mtp.log 2>&1 &
           }
-
-          # تا ۱۰ دقیقه تلاش می‌کند پورت ثابت را بگیرد (اگر ران قبلی هنوز پورت را دارد صبر می‌کند)
-          start_bore() {
-            for try in $(seq 1 40); do
-              pkill -f 'bore local' 2>/dev/null || true
+          try_bore() {
+            : > /tmp/bore.log
+            nohup bore local 3129 --to bore.pub --port "$1" > /tmp/bore.log 2>&1 &
+            for i in $(seq 1 20); do
+              grep -q "listening at bore.pub:$1" /tmp/bore.log && { PUBPORT="$1"; return 0; }
+              pgrep -f 'bore local' >/dev/null || return 1
               sleep 1
-              : > /tmp/bore.log
-              nohup bore local 3129 --to bore.pub --port "$PORT" > /tmp/bore.log 2>&1 &
-              for i in $(seq 1 15); do
-                grep -q "listening at bore.pub:$PORT" /tmp/bore.log && { echo "bore روی پورت $PORT بالا آمد"; return 0; }
-                pgrep -f 'bore local' >/dev/null || break
-                sleep 1
-              done
-              echo "تلاش $try ناموفق، ۱۵ ثانیه صبر"
-              sleep 15
             done
             return 1
           }
 
           start_mtp; sleep 5
-          start_bore || echo "bore بعد از ۱۰ دقیقه هم پورت را نگرفت"
+          PUBPORT=""
+          OK=0
+          for try in $(seq 1 6); do
+            pkill -f 'bore local' 2>/dev/null || true
+            sleep 2
+            if try_bore "$PORT"; then OK=1; echo "پورت ثابت $PORT گرفته شد"; break; fi
+            echo "تلاش $try برای پورت ثابت ناموفق:"; tail -3 /tmp/bore.log
+            publish "fixed port attempt $try failed"
+            sleep 15
+          done
+          if [ "$OK" != "1" ]; then
+            echo "پورت ثابت نشد؛ پورت تصادفی"
+            pkill -f 'bore local' 2>/dev/null || true; sleep 2
+            : > /tmp/bore.log
+            nohup bore local 3129 --to bore.pub > /tmp/bore.log 2>&1 &
+            for i in $(seq 1 25); do
+              P="$(grep -o 'bore.pub:[0-9]*' /tmp/bore.log | head -1 | cut -d: -f2 || true)"
+              [ -n "$P" ] && { PUBPORT="$P"; break; }
+              sleep 2
+            done
+          fi
+          publish "started"
+          echo "public-port=$PUBPORT"
 
           START=$(date +%s)
-          CHAIN=$((345*60))   # دقیقه ۳۴۵: ران بعدی را استارت بزن
-          END=$((352*60))     # دقیقه ۳۵۲: پورت را آزاد کن (ران بعدی جایش را می‌گیرد)
+          CHAIN=$((340*60))
+          END=$((344*60))
+          LAST_PUB=0
           while :; do
             NOW=$(( $(date +%s) - START ))
             [ "$NOW" -ge "$END" ] && break
             if [ "$NOW" -ge "$CHAIN" ] && [ -z "${CHAINED:-}" ]; then
-              CHAINED=1
-              echo "زنجیره: استارت ران بعدی"
+              CHAINED=1; echo "زنجیره: استارت ران بعدی"
               curl -s -o /dev/null -w 'dispatch %{http_code}\n' -X POST \
-                -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
-                "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/relay.yml/dispatches" \
-                -d '{"ref":"main"}' || true
+                -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+                "$API/actions/workflows/relay.yml/dispatches" -d '{"ref":"main"}' || true
             fi
-            if ! pgrep -f '/tmp/mtp.py' >/dev/null; then echo "$(date -u +%T) mtproto مرد، ری‌استارت"; start_mtp; sleep 3; fi
-            if ! grep -q "listening at bore.pub:$PORT" /tmp/bore.log 2>/dev/null || ! pgrep -f 'bore local' >/dev/null; then
+            if ! pgrep -f '/tmp/mtp.py' >/dev/null; then echo "$(date -u +%T) mtproto مرد"; start_mtp; sleep 3; fi
+            if ! pgrep -f 'bore local' >/dev/null; then
               echo "$(date -u +%T) bore مرد، ری‌استارت"
-              start_bore || true
+              if [ "$PUBPORT" = "$PORT" ]; then try_bore "$PORT" || { n=1; until try_bore "$PORT" || [ $n -ge 20 ]; do n=$((n+1)); sleep 15; done; }; fi
+              publish "bore restarted"
             fi
+            if [ $(( NOW - LAST_PUB )) -ge 600 ]; then LAST_PUB=$NOW; publish "heartbeat"; fi
             sleep 60
           done
-          echo "پایان ران؛ آزادکردن پورت برای ران بعدی"
+          echo "پایان ران؛ آزادکردن پورت"
           pkill -f 'bore local' 2>/dev/null || true
           sleep 3

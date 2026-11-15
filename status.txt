@@ -1,13 +1,10 @@
-when: 2026-11-15T16:29:40Z
+when: 2026-11-15T16:39:41Z
 run: 43726420750
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
 sgs
-
-Stats for 15.11.2026 15:29:16
-hesam: 417 connects (6 current), 48.33 MB, 49943 msgs
 
 Stats for 15.11.2026 15:39:16
 hesam: 437 connects (0 current), 51.59 MB, 53429 msgs
@@ -26,9 +23,12 @@ hesam: 500 connects (0 current), 58.19 MB, 56722 msgs
 
 Stats for 15.11.2026 16:29:16
 hesam: 533 connects (5 current), 63.16 MB, 60093 msgs
+
+Stats for 15.11.2026 16:39:16
+hesam: 650 connects (6 current), 81.63 MB, 70551 msgs
 --- bore ---
-:client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
-[2m2026-11-15T16:29:25.514346Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma8a587d7-23ef-49b4-8a0a-bafaaa02ef02[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T16:29:30.179679Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m26dd85a6-6b15-4d0f-b132-4f638955bcda[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T16:29:33.404982Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma30751ce-f735-449a-b2e7-08e80926c9cb[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-15T16:29:33.940546Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma8a587d7-23ef-49b4-8a0a-bafaaa02ef02[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[0m3f31f446-e127-4814-9f08-fb6c15a30202[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-15T16:39:35.495719Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mf2e61cb6-e3d6-49eb-a833-b708dadeafbe[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T16:39:37.247094Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m63a8f78a-d56e-4d0a-a37c-2c01b8ca7062[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-15T16:39:38.576921Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m8bf72454-24b2-45b2-993e-73f8e799eeab[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T16:39:41.504449Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m45722e89-e827-4533-bd66-122b808137c2[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited

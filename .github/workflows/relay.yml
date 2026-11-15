@@ -6,7 +6,7 @@ name: relay
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */3 * * *'   # پشتیبان: اگر زنجیره پاره شد حداکثر ۳ ساعت بعد وصل می‌شود
+    - cron: '17 * * * *'   # پشتیبان: اگر زنجیره پاره شد حداکثر ۱ ساعت بعد خودش وصل می‌شود
 
 permissions:
   actions: write
@@ -77,13 +77,14 @@ jobs:
           start_mtp; sleep 5
           PUBPORT=""
           OK=0
-          for try in $(seq 1 6); do
+          # تا ۳۰ دقیقه صبر می‌کنیم ران قبلی پورت ثابت را آزاد کند؛ این‌طوری
+          # بین دو ران هیچ فاصله‌ای نمی‌افتد و پورت هرگز عوض نمی‌شود.
+          for try in $(seq 1 120); do
             pkill -f 'bore local' 2>/dev/null || true
-            sleep 2
-            if try_bore "$PORT"; then OK=1; echo "پورت ثابت $PORT گرفته شد"; break; fi
-            echo "تلاش $try برای پورت ثابت ناموفق:"; tail -3 /tmp/bore.log
-            publish "fixed port attempt $try failed"
-            sleep 15
+            sleep 1
+            if try_bore "$PORT"; then OK=1; echo "پورت ثابت $PORT گرفته شد (تلاش $try)"; break; fi
+            [ "$try" = "1" ] && publish "waiting for fixed port"
+            sleep 14
           done
           if [ "$OK" != "1" ]; then
             echo "پورت ثابت نشد؛ پورت تصادفی"
@@ -100,7 +101,7 @@ jobs:
           echo "public-port=$PUBPORT"
 
           START=$(date +%s)
-          CHAIN=$((340*60))
+          CHAIN=$((300*60))
           END=$((344*60))
           LAST_PUB=0
           while :; do

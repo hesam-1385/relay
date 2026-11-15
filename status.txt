@@ -1,4 +1,4 @@
-when: 2026-11-15T14:59:24Z
+when: 2026-11-15T15:09:26Z
 run: 43726420750
 public-port: 38841
 fixed-port-target: 38841
@@ -13,9 +13,12 @@ hesam: 26 connects (6 current), 0.39 MB, 329 msgs
 
 New IPs:
 ::1
+
+Stats for 15.11.2026 15:09:16
+hesam: 188 connects (9 current), 22.90 MB, 21812 msgs
 --- bore ---
-[0m[2m=[0mf4662b61-85c2-4791-8a1d-16cad5d2256e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T14:59:17.905128Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m74a4774d-da98-405e-a4e7-79a252656612[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T14:59:17.905131Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m584e2969-b052-4404-a107-2af9abe1d689[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T14:59:17.905179Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m460ab653-2ae3-40d5-aaec-a40b36743f49[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-15T14:59:23.410683Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m42ee1c59-e991-4918-b3ee-50e993e3dda0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m=[0m8df54b6b-ef38-47dd-b6dc-e539a08a1def[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:09:12.452488Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m47d45723-d360-4f24-92b5-da42bf85c500[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:09:16.080082Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m25084a61-7091-4bfc-8837-feea7626ae92[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:09:17.772066Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mce262dd0-c6a4-44ec-b5fb-eb5d3c577e40[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-15T15:09:24.162445Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m8df54b6b-ef38-47dd-b6dc-e539a08a1def[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited

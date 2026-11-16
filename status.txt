@@ -1,9 +1,9 @@
-when: 2026-11-16T10:02:27Z
+when: 2026-11-16T10:04:28Z
 run: 43827489261
 public-port: 46533
 fixed-port-target: 38841
 extra-port: 37521
-note: heartbeat
+note: bore restarted
 --- mtp ---
 47:48
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs

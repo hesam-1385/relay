@@ -1,13 +1,10 @@
-when: 2026-11-16T06:43:25Z
+when: 2026-11-16T06:53:27Z
 run: 43805321122
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
- connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 16.11.2026 05:42:55
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 16.11.2026 05:52:55
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
@@ -29,8 +26,12 @@ hesam: 1 connects (0 current), 0.00 MB, 2 msgs
 
 New IPs:
 ::1
+
+Stats for 16.11.2026 06:52:55
+hesam: 6 connects (0 current), 0.02 MB, 64 msgs
 --- bore ---
-[2m2026-11-16T06:23:17.578071Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
-[2m2026-11-16T06:23:17.578099Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
-[2m2026-11-16T06:41:47.145534Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mfeabefae-fa2c-44f5-991c-e49991191e26[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-16T06:41:53.295718Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mfeabefae-fa2c-44f5-991c-e49991191e26[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+m=[0m1aea0f8d-fb2f-442d-904f-6a57187b379b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-16T06:49:40.343772Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m1aea0f8d-fb2f-442d-904f-6a57187b379b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-16T06:49:40.672577Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m9ef8bc21-7cb5-461e-92e7-0d85834fa39a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-16T06:50:47.863913Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mffecb8e9-3d0d-479d-92bb-106061f56540[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-16T06:50:50.663529Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mffecb8e9-3d0d-479d-92bb-106061f56540[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited

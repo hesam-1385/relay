@@ -37,6 +37,24 @@ jobs:
           tar -xzf /tmp/bore.tgz -C /tmp/bx
           sudo install -m755 "$(find /tmp/bx -type f -name 'bore*' | head -1)" /usr/local/bin/bore
           bore --version
+          {
+            echo 'import socket, sys'
+            echo 'p = int(sys.argv[1])'
+            echo 's = socket.socket(); s.settimeout(7)'
+            echo 'try:'
+            echo '    s.connect(("bore.pub", p))'
+            echo '    s.sendall(b"GET / HTTP/1.1\r\n\r\n")'
+            echo '    try:'
+            echo '        s.recv(64); print("alive")'
+            echo '    except socket.timeout:'
+            echo '        print("stale"); sys.exit(1)'
+            echo 'except (ConnectionResetError, ConnectionAbortedError):'
+            echo '    print("alive")'
+            echo 'except Exception as e:'
+            echo '    print("err", type(e).__name__); sys.exit(1)'
+            echo 'finally:'
+            echo '    s.close()'
+          } > /tmp/verify.py
           python3 -c "import sys;print(sys.version)"
 
       - name: run
@@ -68,27 +86,9 @@ jobs:
             nohup python3 /tmp/mtp.py /tmp/cfg.py > /tmp/mtp.log 2>&1 &
           }
           # یک پورت ممکن است در سرور bore «مرده» مانده باشد: TCP وصل می‌شود
-          # ولی هیچ داده‌ای رد نمی‌شود. این تابع با فرستادن چند بایت تست می‌کند.
+          # ولی هیچ داده‌ای رد نمی‌شود. /tmp/verify.py این حالت را تشخیص می‌دهد.
           verify_port() {
-            python3 - "$1" <<'PYV'
-import socket, sys
-p = int(sys.argv[1])
-s = socket.socket(); s.settimeout(7)
-try:
-    s.connect(("bore.pub", p))
-    s.sendall(b"GET / HTTP/1.1\r\n\r\n")
-    try:
-        d = s.recv(64)
-        print("alive" if d == b"" else "alive")
-    except socket.timeout:
-        print("stale"); sys.exit(1)
-except (ConnectionResetError, ConnectionAbortedError):
-    print("alive")          # mtproto garbage را بست = تونل رد می‌کند
-except Exception as e:
-    print("err", type(e).__name__); sys.exit(1)
-finally:
-    s.close()
-PYV
+            python3 /tmp/verify.py "$1"
           }
 
           try_bore() {

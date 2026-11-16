@@ -1,14 +1,16 @@
-when: 2026-11-16T13:46:11Z
+when: 2026-11-16T13:56:16Z
 run: 43871695993
 public-port: 14896
 fixed-port-target: 38841
 extra-port: 52174
-note: started
+note: tunnel revived
 --- mtp ---
 hesam: tg://proxy?server=20.163.4.34&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=20.163.4.34&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=20.163.4.34&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1996
+Stats for 16.11.2026 13:54:29
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-16T13:46:07.384979Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m14896
-[2m2026-11-16T13:46:07.385018Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:14896
+[2m2026-11-16T13:56:15.359661Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m14896
+[2m2026-11-16T13:56:15.359702Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:14896

@@ -1,9 +1,9 @@
-when: 2026-11-16T20:13:40Z
+when: 2026-11-16T20:13:42Z
 run: 43932478905
 public-port: 18462
 fixed-port-target: 38841
 extra-port: 14461
-note: tunnel revived
+note: heartbeat
 --- mtp ---
 esam: tg://proxy?server=132.196.54.169&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=132.196.54.169&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
@@ -25,3 +25,4 @@ hesam: 3 connects (0 current), 0.00 MB, 6 msgs
 --- bore ---
 [2m2026-11-16T20:13:39.900677Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m18462
 [2m2026-11-16T20:13:39.900724Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:18462
+[2m2026-11-16T20:13:41.093594Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mf721fc50-4085-4309-a07d-a05ebd4751f5[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

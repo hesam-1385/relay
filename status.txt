@@ -1,9 +1,9 @@
-when: 2026-11-16T14:06:20Z
+when: 2026-11-16T14:06:25Z
 run: 43871695993
 public-port: 14896
 fixed-port-target: 38841
 extra-port: 52174
-note: bore restarted
+note: tunnel revived
 --- mtp ---
 hesam: tg://proxy?server=20.163.4.34&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=20.163.4.34&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
@@ -15,8 +15,5 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 Stats for 16.11.2026 14:04:29
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-m2026-11-16T13:56:15.359702Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:14896
-[2m2026-11-16T14:01:07.899078Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma1b7bfaa-9fe2-45a1-8d88-3b2930a2dbde[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-16T14:01:08.094005Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma1b7bfaa-9fe2-45a1-8d88-3b2930a2dbde[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-16T14:05:14.693134Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m701b27b0-70bf-443a-b8ef-1ccf12123574[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-16T14:05:21.669057Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m701b27b0-70bf-443a-b8ef-1ccf12123574[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-16T14:06:24.202177Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m14896
+[2m2026-11-16T14:06:24.202217Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:14896

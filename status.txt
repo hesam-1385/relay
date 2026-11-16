@@ -1,12 +1,11 @@
-when: 2026-11-16T08:40:41Z
+when: 2026-11-16T08:48:42Z
 run: 43827489261
 public-port: 46533
 fixed-port-target: 38841
 extra-port: 37521
-note: heartbeat
+note: bore restarted
 --- mtp ---
-cb3f9d024e68
-hesam: tg://proxy?server=20.110.167.180&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=20.110.167.180&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1996
 Stats for 16.11.2026 08:07:48
@@ -19,6 +18,9 @@ Stats for 16.11.2026 08:27:48
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 16.11.2026 08:37:48
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 16.11.2026 08:47:48
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-16T08:40:39.465215Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m46533

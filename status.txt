@@ -1,10 +1,10 @@
-when: 2026-11-16T05:53:10Z
+when: 2026-11-16T06:03:12Z
 run: 43805321122
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
-hesam: tg://proxy?server=48.214.53.80&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+8a71cb3f9d024e68
 hesam: tg://proxy?server=48.214.53.80&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=48.214.53.80&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1997
@@ -15,6 +15,9 @@ Stats for 16.11.2026 05:42:55
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 16.11.2026 05:52:55
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 16.11.2026 06:02:55
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-16T05:49:08.653874Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841

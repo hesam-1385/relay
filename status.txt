@@ -1,25 +1,13 @@
-when: 2026-11-16T07:39:18Z
-run: 43821599340
-public-port: 61427
+when: 2026-11-16T07:49:41Z
+run: 43826452349
+public-port: 38843
 fixed-port-target: 38841
-extra-port: 43426
-note: heartbeat
+extra-port: none
+note: waiting for fixed port
 --- mtp ---
-roxy?server=34.223.158.89&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
-hesam: tg://proxy?server=34.223.158.89&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
-hesam: tg://proxy?server=34.223.158.89&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
-Got cert from the MASK_HOST cloudflare.com, its length is 1998
-Stats for 16.11.2026 07:17:55
-hesam: 2 connects (0 current), 0.00 MB, 17 msgs
-
-New IPs:
-::1
-
-Stats for 16.11.2026 07:27:55
-hesam: 2 connects (0 current), 0.00 MB, 17 msgs
-
-Stats for 16.11.2026 07:37:55
-hesam: 2 connects (0 current), 0.00 MB, 17 msgs
+hesam: tg://proxy?server=4.150.197.97&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=4.150.197.97&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=4.150.197.97&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1997
 --- bore ---
-[2m2026-11-16T07:39:16.534934Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m61427
-[2m2026-11-16T07:39:16.534966Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:61427
+Error: server error: port already in use

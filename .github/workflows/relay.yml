@@ -42,7 +42,7 @@ jobs:
             echo 'p = int(sys.argv[1])'
             echo 's = socket.socket(); s.settimeout(7)'
             echo 'try:'
-            echo '    s.connect(("bore.pub", p))'
+            echo '    s.connect(("159.223.110.159", p))'
             echo '    s.sendall(b"GET / HTTP/1.1\r\n\r\n")'
             echo '    try:'
             echo '        s.recv(64); print("alive")'
@@ -107,7 +107,8 @@ jobs:
           OK=0
           # تا ۳۰ دقیقه صبر می‌کنیم ران قبلی پورت ثابت را آزاد کند؛ این‌طوری
           # بین دو ران هیچ فاصله‌ای نمی‌افتد و پورت هرگز عوض نمی‌شود.
-          for CAND in $PORT $PORT2 $PORT3 $PORT4 $PORT5; do
+          CANDIDATES="$(seq 38841 38860)"
+          for CAND in $CANDIDATES; do
             for try in $(seq 1 40); do
               pkill -f 'bore local' 2>/dev/null || true
               sleep 1

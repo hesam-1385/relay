@@ -1,12 +1,10 @@
-when: 2026-11-16T00:48:26Z
+when: 2026-11-16T00:58:28Z
 run: 43775846067
 public-port: 38841
 fixed-port-target: 38841
-note: heartbeat
+note: bore restarted
 --- mtp ---
-oudflare.com, its length is 1997
-Stats for 15.11.2026 23:48:00
-hesam: 3 connects (0 current), 0.01 MB, 31 msgs
+s (0 current), 0.01 MB, 31 msgs
 
 New IPs:
 ::1
@@ -28,6 +26,9 @@ hesam: 3 connects (0 current), 0.01 MB, 31 msgs
 
 Stats for 16.11.2026 00:48:00
 hesam: 3 connects (0 current), 0.01 MB, 31 msgs
+
+Stats for 16.11.2026 00:58:00
+hesam: 3 connects (0 current), 0.01 MB, 31 msgs
 --- bore ---
-[2m2026-11-16T00:44:24.047830Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
-[2m2026-11-16T00:44:24.047861Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
+[2m2026-11-16T00:58:27.441061Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
+[2m2026-11-16T00:58:27.441091Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841

@@ -1,16 +1,10 @@
-when: 2026-11-16T00:58:29Z
+when: 2026-11-16T01:08:30Z
 run: 43775846067
 public-port: 38841
 fixed-port-target: 38841
 note: heartbeat
 --- mtp ---
-s (0 current), 0.01 MB, 31 msgs
-
-New IPs:
-::1
-
-Stats for 15.11.2026 23:58:00
-hesam: 3 connects (0 current), 0.01 MB, 31 msgs
+sam: 3 connects (0 current), 0.01 MB, 31 msgs
 
 Stats for 16.11.2026 00:08:00
 hesam: 3 connects (0 current), 0.01 MB, 31 msgs
@@ -29,6 +23,11 @@ hesam: 3 connects (0 current), 0.01 MB, 31 msgs
 
 Stats for 16.11.2026 00:58:00
 hesam: 3 connects (0 current), 0.01 MB, 31 msgs
+
+Stats for 16.11.2026 01:08:00
+hesam: 3 connects (0 current), 0.01 MB, 31 msgs
 --- bore ---
 [2m2026-11-16T00:58:27.441061Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
 [2m2026-11-16T00:58:27.441091Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
+[2m2026-11-16T01:02:18.917505Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m54ff1119-2c8a-4f38-9ff2-66f801943c1a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-16T01:02:21.869989Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m54ff1119-2c8a-4f38-9ff2-66f801943c1a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited

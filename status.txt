@@ -1,13 +1,13 @@
-when: 2026-11-16T07:49:41Z
-run: 43826452349
+when: 2026-11-16T07:58:21Z
+run: 43827489261
 public-port: 38843
 fixed-port-target: 38841
 extra-port: none
 note: waiting for fixed port
 --- mtp ---
-hesam: tg://proxy?server=4.150.197.97&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
-hesam: tg://proxy?server=4.150.197.97&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
-hesam: tg://proxy?server=4.150.197.97&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
-Got cert from the MASK_HOST cloudflare.com, its length is 1997
+hesam: tg://proxy?server=20.110.167.180&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=20.110.167.180&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=20.110.167.180&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1996
 --- bore ---
 Error: server error: port already in use

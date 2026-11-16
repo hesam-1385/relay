@@ -23,6 +23,10 @@ jobs:
     env:
       MTP_SECRET: ${{ secrets.MTP_SECRET }}
       PORT: '38841'
+      PORT2: '38842'
+      PORT3: '38843'
+      PORT4: '38844'
+      PORT5: '38845'
     steps:
       - name: setup
         run: |
@@ -63,6 +67,30 @@ jobs:
             sleep 1
             nohup python3 /tmp/mtp.py /tmp/cfg.py > /tmp/mtp.log 2>&1 &
           }
+          # یک پورت ممکن است در سرور bore «مرده» مانده باشد: TCP وصل می‌شود
+          # ولی هیچ داده‌ای رد نمی‌شود. این تابع با فرستادن چند بایت تست می‌کند.
+          verify_port() {
+            python3 - "$1" <<'PYV'
+import socket, sys
+p = int(sys.argv[1])
+s = socket.socket(); s.settimeout(7)
+try:
+    s.connect(("bore.pub", p))
+    s.sendall(b"GET / HTTP/1.1\r\n\r\n")
+    try:
+        d = s.recv(64)
+        print("alive" if d == b"" else "alive")
+    except socket.timeout:
+        print("stale"); sys.exit(1)
+except (ConnectionResetError, ConnectionAbortedError):
+    print("alive")          # mtproto garbage را بست = تونل رد می‌کند
+except Exception as e:
+    print("err", type(e).__name__); sys.exit(1)
+finally:
+    s.close()
+PYV
+          }
+
           try_bore() {
             : > /tmp/bore.log
             nohup bore local 3129 --to bore.pub --port "$1" > /tmp/bore.log 2>&1 &
@@ -79,12 +107,19 @@ jobs:
           OK=0
           # تا ۳۰ دقیقه صبر می‌کنیم ران قبلی پورت ثابت را آزاد کند؛ این‌طوری
           # بین دو ران هیچ فاصله‌ای نمی‌افتد و پورت هرگز عوض نمی‌شود.
-          for try in $(seq 1 120); do
-            pkill -f 'bore local' 2>/dev/null || true
-            sleep 1
-            if try_bore "$PORT"; then OK=1; echo "پورت ثابت $PORT گرفته شد (تلاش $try)"; break; fi
-            [ "$try" = "1" ] && publish "waiting for fixed port"
-            sleep 14
+          for CAND in $PORT $PORT2 $PORT3 $PORT4 $PORT5; do
+            for try in $(seq 1 40); do
+              pkill -f 'bore local' 2>/dev/null || true
+              sleep 1
+              if try_bore "$CAND"; then
+                if verify_port "$CAND"; then OK=1; PORT="$CAND"; echo "پورت $CAND زنده است"; break 2; fi
+                echo "پورت $CAND مرده (stale) — پورت بعدی"
+                pkill -f 'bore local' 2>/dev/null || true
+                break
+              fi
+              [ "$try" = "1" ] && publish "waiting for fixed port"
+              sleep 14
+            done
           done
           if [ "$OK" != "1" ]; then
             echo "پورت ثابت نشد؛ پورت تصادفی"
@@ -128,7 +163,16 @@ jobs:
               if [ "$PUBPORT" = "$PORT" ]; then try_bore "$PORT" || { n=1; until try_bore "$PORT" || [ $n -ge 20 ]; do n=$((n+1)); sleep 15; done; }; fi
               publish "bore restarted"
             fi
-            if [ $(( NOW - LAST_PUB )) -ge 600 ]; then LAST_PUB=$NOW; publish "heartbeat"; fi
+            if [ $(( NOW - LAST_PUB )) -ge 600 ]; then
+              LAST_PUB=$NOW
+              if ! verify_port "$PUBPORT" >/dev/null 2>&1; then
+                echo "$(date -u +%T) تونل مرده؛ ری‌استارت روی همان پورت"
+                pkill -f 'bore local' 2>/dev/null || true; sleep 2
+                try_bore "$PUBPORT" || true
+                publish "tunnel revived"
+              fi
+              publish "heartbeat"
+            fi
             sleep 60
           done
           echo "پایان ران؛ آزادکردن پورت"

@@ -107,9 +107,9 @@ jobs:
           OK=0
           # تا ۳۰ دقیقه صبر می‌کنیم ران قبلی پورت ثابت را آزاد کند؛ این‌طوری
           # بین دو ران هیچ فاصله‌ای نمی‌افتد و پورت هرگز عوض نمی‌شود.
-          CANDIDATES="$(seq 38841 38860)"
+          CANDIDATES="$(seq 38841 38850)"
           for CAND in $CANDIDATES; do
-            for try in $(seq 1 40); do
+            for try in $(seq 1 2); do
               pkill -f 'bore local' 2>/dev/null || true
               sleep 1
               if try_bore "$CAND"; then

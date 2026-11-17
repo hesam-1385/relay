@@ -1,4 +1,4 @@
-when: 2026-11-17T21:08:14Z
+when: 2026-11-17T21:18:21Z
 run: 44141501806
 public-port: 38841
 fixed-port-target: 38841
@@ -6,9 +6,6 @@ extra-port: 51346
 note: heartbeat
 --- mtp ---
  connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 17.11.2026 20:06:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 17.11.2026 20:16:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
@@ -30,9 +27,12 @@ hesam: 1 connects (0 current), 0.00 MB, 4 msgs
 
 Stats for 17.11.2026 21:06:13
 hesam: 1 connects (0 current), 0.00 MB, 4 msgs
+
+Stats for 17.11.2026 21:16:13
+hesam: 1 connects (0 current), 0.00 MB, 4 msgs
 --- bore ---
-m=[0m21de5889-b68e-4cb2-ab30-f96422df3734[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-17T20:48:00.399297Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m21de5889-b68e-4cb2-ab30-f96422df3734[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-17T20:58:02.437512Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mc3c783cd-7ce8-40fa-841c-e02b8c1e47a0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0mc3c783cd-7ce8-40fa-841c-e02b8c1e47a0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-17T20:58:07.708897Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mc3c783cd-7ce8-40fa-841c-e02b8c1e47a0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-17T21:08:09.362558Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m50e8980d-57f2-43ad-991b-ecb0137e1ff3[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-17T21:08:14.606770Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m50e8980d-57f2-43ad-991b-ecb0137e1ff3[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-17T21:18:16.516294Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m926d4aef-c628-4178-9560-c3057d2884e8[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

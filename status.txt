@@ -1,14 +1,11 @@
-when: 2026-11-17T06:57:08Z
+when: 2026-11-17T06:58:10Z
 run: 43990757248
 public-port: 25560
 fixed-port-target: 38841
 extra-port: 53418
 note: bore restarted
 --- mtp ---
-37:22
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 17.11.2026 05:47:22
+47:22
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 17.11.2026 05:57:22
@@ -27,6 +24,9 @@ Stats for 17.11.2026 06:37:22
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 17.11.2026 06:47:22
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 17.11.2026 06:57:22
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-17T06:25:22.112035Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m25560

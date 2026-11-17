@@ -1,12 +1,11 @@
-when: 2026-11-17T19:27:04Z
+when: 2026-11-17T19:37:11Z
 run: 44141501806
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 51346
 note: heartbeat
 --- mtp ---
-7b93d24f60e8a71cb3f9d024e68
-hesam: tg://proxy?server=104.40.47.151&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+ecret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1997
 Stats for 17.11.2026 18:46:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
@@ -22,9 +21,12 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 17.11.2026 19:26:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 17.11.2026 19:36:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-m=[0ma36677d2-36d0-4b7c-867c-b68ece2471a6[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-17T19:06:50.274629Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma36677d2-36d0-4b7c-867c-b68ece2471a6[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-17T19:16:51.927293Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m76e9807c-7b4c-4f51-ad76-5226fcac5a09[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0m76e9807c-7b4c-4f51-ad76-5226fcac5a09[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-17T19:16:57.176040Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m76e9807c-7b4c-4f51-ad76-5226fcac5a09[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-17T19:26:59.040341Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mf8c707c5-0977-496c-8f28-b866f98fec25[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-17T19:27:04.378248Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mf8c707c5-0977-496c-8f28-b866f98fec25[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-17T19:37:06.318904Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m96cc118b-3232-4299-bba0-421ec6a6bbf6[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

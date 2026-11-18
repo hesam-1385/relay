@@ -1,14 +1,11 @@
-when: 2026-11-18T21:59:41Z
+when: 2026-11-18T22:00:42Z
 run: 44352847275
 public-port: 55719
 fixed-port-target: 38841
 extra-port: 49013
 note: bore restarted
 --- mtp ---
-39:44
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 18.11.2026 20:49:44
+49:44
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 18.11.2026 20:59:44
@@ -27,6 +24,9 @@ Stats for 18.11.2026 21:39:44
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 18.11.2026 21:49:45
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 18.11.2026 21:59:45
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 Error: timed out waiting for initial message

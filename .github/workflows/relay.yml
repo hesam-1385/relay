@@ -62,7 +62,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -u
-          SECRET="${MTP_SECRET:-e5c1a7b93d24f60e8a71cb3f9d024e68}"
+          SECRET="${MTP_SECRET:?Missing required GitHub Actions secret MTP_SECRET}"
           API="https://api.github.com/repos/$GITHUB_REPOSITORY"
           printf 'PORT = 3129\nUSERS = {"hesam": "%s"}\nMODES = {"classic": True, "secure": True, "tls": True}\nTLS_DOMAIN = "cloudflare.com"\n' "$SECRET" > /tmp/cfg.py
 

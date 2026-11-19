@@ -1,14 +1,11 @@
-when: 2026-11-19T09:28:37Z
+when: 2026-11-19T09:33:39Z
 run: 44458461775
 public-port: 14444
 fixed-port-target: 38841
 extra-port: 10699
-note: heartbeat
+note: bore restarted
 --- mtp ---
-11:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 08:21:40
+21:40
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 19.11.2026 08:31:40
@@ -27,6 +24,9 @@ Stats for 19.11.2026 09:11:40
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 19.11.2026 09:21:40
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 19.11.2026 09:31:40
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-19T09:28:35.398400Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m14444

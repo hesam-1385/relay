@@ -1,9 +1,9 @@
-when: 2026-11-19T17:16:45Z
+when: 2026-11-19T17:16:50Z
 run: 44561165007
 public-port: 45094
 fixed-port-target: 38841
 extra-port: 29366
-note: bore restarted
+note: tunnel revived
 --- mtp ---
 hesam: tg://proxy?server=3.42.157.22&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=3.42.157.22&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
@@ -18,7 +18,5 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 Stats for 19.11.2026 17:14:28
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-Error: timed out waiting for initial message
-
-Caused by:
-    deadline has elapsed
+[2m2026-11-19T17:16:49.277979Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m45094
+[2m2026-11-19T17:16:49.278012Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:45094

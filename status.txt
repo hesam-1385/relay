@@ -1,33 +1,14 @@
-when: 2026-11-19T10:50:26Z
-run: 44458461775
-public-port: 14444
+when: 2026-11-19T10:59:21Z
+run: 44503654707
+public-port: 16645
 fixed-port-target: 38841
-extra-port: 10699
-note: heartbeat
+extra-port: 39593
+note: started
 --- mtp ---
-31:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 09:41:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 09:51:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 10:01:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 10:11:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 10:21:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 10:31:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 19.11.2026 10:41:40
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+hesam: tg://proxy?server=3.41.210.71&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=3.41.210.71&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=3.41.210.71&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1998
 --- bore ---
-[2m2026-11-19T10:50:24.288856Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m14444
-[2m2026-11-19T10:50:24.288890Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:14444
+[2m2026-11-19T10:59:17.565885Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m16645
+[2m2026-11-19T10:59:17.565928Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:16645

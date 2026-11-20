@@ -1,14 +1,11 @@
-when: 2026-11-20T21:28:51Z
+when: 2026-11-20T21:29:53Z
 run: 44759706711
 public-port: 60125
 fixed-port-target: 38841
 extra-port: 37312
 note: bore restarted
 --- mtp ---
-09:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 20:19:13
+19:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 20:29:13
@@ -27,6 +24,9 @@ Stats for 20.11.2026 21:09:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 21:19:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 20.11.2026 21:29:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 Error: server error: port already in use

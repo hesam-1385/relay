@@ -1,32 +1,14 @@
-when: 2026-11-20T21:33:57Z
-run: 44759706711
-public-port: 60125
+when: 2026-11-20T21:36:53Z
+run: 44815169210
+public-port: 12870
 fixed-port-target: 38841
-extra-port: 37312
-note: bore restarted
+extra-port: 9805
+note: started
 --- mtp ---
-19:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 20:29:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 20:39:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 20:49:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 20:59:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 21:09:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 21:19:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 21:29:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+hesam: tg://proxy?server=3.42.157.172&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=3.42.157.172&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=3.42.157.172&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1997
 --- bore ---
-Error: server error: port already in use
+[2m2026-11-20T21:36:49.266672Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m12870
+[2m2026-11-20T21:36:49.266720Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:12870

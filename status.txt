@@ -1,14 +1,11 @@
-when: 2026-11-20T21:17:37Z
+when: 2026-11-20T21:27:49Z
 run: 44759706711
 public-port: 60125
 fixed-port-target: 38841
 extra-port: 37312
-note: heartbeat
+note: tunnel revived
 --- mtp ---
-59:12
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 20:09:13
+09:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 20:19:13
@@ -28,6 +25,8 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 21:09:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 20.11.2026 21:19:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-20T21:17:34.977695Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m60125
-[2m2026-11-20T21:17:34.977724Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:60125
+Error: server error: port already in use

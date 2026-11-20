@@ -1,17 +1,11 @@
-when: 2026-11-20T03:48:32Z
+when: 2026-11-20T03:58:43Z
 run: 44622121167
 public-port: 61863
 fixed-port-target: 38841
 extra-port: 60649
-note: heartbeat
+note: tunnel revived
 --- mtp ---
-30:28
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 02:40:28
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 20.11.2026 02:50:28
+ 20.11.2026 02:50:28
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 03:00:28
@@ -28,6 +22,10 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 03:40:28
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Got cert from the MASK_HOST cloudflare.com, its length is 1996
+Stats for 20.11.2026 03:50:28
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-20T03:48:30.031434Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m61863
-[2m2026-11-20T03:48:30.031470Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:61863
+[2m2026-11-20T03:58:42.372779Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m61863
+[2m2026-11-20T03:58:42.372813Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:61863

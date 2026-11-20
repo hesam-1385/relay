@@ -1,14 +1,11 @@
-when: 2026-11-20T20:57:04Z
+when: 2026-11-20T21:07:18Z
 run: 44759706711
 public-port: 60125
 fixed-port-target: 38841
 extra-port: 37312
-note: heartbeat
+note: tunnel revived
 --- mtp ---
- 20.11.2026 19:49:12
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Got cert from the MASK_HOST cloudflare.com, its length is 1997
+from the MASK_HOST cloudflare.com, its length is 1997
 Stats for 20.11.2026 19:59:12
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
@@ -26,6 +23,11 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 20.11.2026 20:49:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 20.11.2026 20:59:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-20T20:57:02.394498Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m60125
-[2m2026-11-20T20:57:02.394541Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:60125
+Error: timed out waiting for initial message
+
+Caused by:
+    deadline has elapsed

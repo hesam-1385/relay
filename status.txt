@@ -1,12 +1,11 @@
-when: 2026-11-21T21:42:32Z
+when: 2026-11-21T21:52:44Z
 run: 44943529073
 public-port: 13508
 fixed-port-target: 38841
 extra-port: 35783
-note: heartbeat
+note: tunnel revived
 --- mtp ---
-ecret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
-Got cert from the MASK_HOST cloudflare.com, its length is 1997
+from the MASK_HOST cloudflare.com, its length is 1997
 Stats for 21.11.2026 20:49:41
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
@@ -24,6 +23,9 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 21.11.2026 21:39:42
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 21.11.2026 21:49:42
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-21T21:42:30.944956Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m13508
-[2m2026-11-21T21:42:30.945001Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:13508
+[2m2026-11-21T21:52:43.455308Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m13508
+[2m2026-11-21T21:52:43.455356Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:13508

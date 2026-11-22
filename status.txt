@@ -1,9 +1,9 @@
-when: 2026-11-22T14:53:26Z
+when: 2026-11-22T14:53:28Z
 run: 45026509624
 public-port: 53837
 fixed-port-target: 38841
 extra-port: 22758
-note: tunnel revived
+note: heartbeat
 --- mtp ---
 7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=20.186.239.45&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d

@@ -1,33 +1,16 @@
-when: 2026-11-22T08:04:52Z
-run: 44975269809
-public-port: 13877
+when: 2026-11-22T08:13:16Z
+run: 44998424661
+public-port: none
 fixed-port-target: 38841
-extra-port: 24626
-note: heartbeat
+extra-port: none
+note: waiting for fixed port
 --- mtp ---
-46:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 06:56:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 07:06:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 07:16:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 07:26:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 07:36:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 07:46:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 22.11.2026 07:56:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+hesam: tg://proxy?server=3.42.157.145&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=3.42.157.145&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=3.42.157.145&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1996
 --- bore ---
-[2m2026-11-22T08:04:50.627553Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m13877
-[2m2026-11-22T08:04:50.627578Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:13877
+Error: timed out waiting for initial message
+
+Caused by:
+    deadline has elapsed

@@ -1,32 +1,13 @@
-when: 2026-11-23T12:58:51Z
-run: 45125115557
-public-port: 63412
+when: 2026-11-23T13:07:18Z
+run: 45173773739
+public-port: 38841
 fixed-port-target: 38841
-extra-port: 54454
-note: heartbeat
+extra-port: none
+note: waiting for fixed port
 --- mtp ---
- 23.11.2026 11:50:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 23.11.2026 12:00:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 23.11.2026 12:10:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 23.11.2026 12:20:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 23.11.2026 12:30:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 23.11.2026 12:40:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 23.11.2026 12:50:24
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
+hesam: tg://proxy?server=52.188.87.22&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=52.188.87.22&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=52.188.87.22&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1996
 --- bore ---
-[2m2026-11-23T12:58:49.341529Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m63412
-[2m2026-11-23T12:58:49.341565Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:63412
+Error: server error: port already in use

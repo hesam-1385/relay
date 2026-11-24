@@ -1,38 +1,14 @@
-when: 2026-11-24T12:01:01Z
-run: 45335135527
-public-port: 38841
+when: 2026-11-24T12:12:56Z
+run: 45384196734
+public-port: 30218
 fixed-port-target: 38841
-extra-port: 16257
-note: heartbeat
+extra-port: 51633
+note: started
 --- mtp ---
- connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 24.11.2026 10:56:06
-hesam: 1 connects (0 current), 0.00 MB, 2 msgs
-
-New IPs:
-::1
-
-Stats for 24.11.2026 11:06:06
-hesam: 2 connects (0 current), 0.00 MB, 4 msgs
-
-Stats for 24.11.2026 11:16:06
-hesam: 3 connects (0 current), 0.00 MB, 6 msgs
-
-Stats for 24.11.2026 11:26:06
-hesam: 3 connects (0 current), 0.00 MB, 6 msgs
-
-Stats for 24.11.2026 11:36:06
-hesam: 3 connects (0 current), 0.00 MB, 6 msgs
-
-Stats for 24.11.2026 11:46:06
-hesam: 3 connects (0 current), 0.00 MB, 6 msgs
-
-Stats for 24.11.2026 11:56:06
-hesam: 3 connects (0 current), 0.00 MB, 6 msgs
+hesam: tg://proxy?server=134.33.70.30&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=134.33.70.30&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=134.33.70.30&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1998
 --- bore ---
-m=[0m2297c11c-b224-4d19-9410-fdd05ee5669b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-24T11:50:54.114153Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m2297c11c-b224-4d19-9410-fdd05ee5669b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-24T11:59:25.593685Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb1afa188-d095-4449-b9e7-5db034247988[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-24T11:59:28.628228Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb1afa188-d095-4449-b9e7-5db034247988[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-24T12:00:55.681808Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m733933f8-d9ea-4a2a-be28-5a8f0b8f2f4f[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-24T12:12:52.538874Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m30218
+[2m2026-11-24T12:12:52.538906Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:30218

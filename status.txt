@@ -1,9 +1,9 @@
-when: 2026-11-24T17:59:48Z
+when: 2026-11-24T18:05:49Z
 run: 45446177856
 public-port: 17621
 fixed-port-target: 38841
 extra-port: 17268
-note: started
+note: bore restarted
 --- mtp ---
 hesam: tg://proxy?server=3.41.210.133&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=3.41.210.133&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68

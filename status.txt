@@ -1,14 +1,11 @@
-when: 2026-11-24T22:45:44Z
+when: 2026-11-24T22:55:55Z
 run: 45446177856
 public-port: 17621
 fixed-port-target: 38841
 extra-port: 17268
-note: heartbeat
+note: tunnel revived
 --- mtp ---
- 24.11.2026 21:37:44
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 24.11.2026 21:47:44
+ 24.11.2026 21:47:44
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 24.11.2026 21:57:44
@@ -26,6 +23,9 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 Got cert from the MASK_HOST cloudflare.com, its length is 1996
 Stats for 24.11.2026 22:37:44
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 24.11.2026 22:47:44
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-24T22:45:41.573495Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m17621
-[2m2026-11-24T22:45:41.573525Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:17621
+[2m2026-11-24T22:55:54.491585Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m17621
+[2m2026-11-24T22:55:54.491623Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:17621

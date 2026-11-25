@@ -1,9 +1,9 @@
-when: 2026-11-25T22:44:43Z
+when: 2026-11-25T22:44:49Z
 run: 45652535487
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 17214
-note: bore restarted
+note: heartbeat
 --- mtp ---
 33:01
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
@@ -31,3 +31,4 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-25T22:44:42.186432Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
 [2m2026-11-25T22:44:42.186463Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
+[2m2026-11-25T22:44:44.592337Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb86942ca-0e89-4de5-b6f2-f9e8130abc18[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

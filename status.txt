@@ -1,14 +1,11 @@
-when: 2026-11-25T22:27:06Z
+when: 2026-11-25T22:33:31Z
 run: 45652535487
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 17214
-note: heartbeat
+note: bore restarted
 --- mtp ---
-13:01
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 25.11.2026 21:23:01
+23:01
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 21:33:01
@@ -28,8 +25,8 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 22:23:01
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
---- bore ---
-Error: timed out waiting for initial message
 
-Caused by:
-    deadline has elapsed
+Stats for 25.11.2026 22:33:01
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+--- bore ---
+Error: server error: port already in use

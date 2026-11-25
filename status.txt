@@ -1,14 +1,11 @@
-when: 2026-11-25T18:54:30Z
+when: 2026-11-25T19:04:37Z
 run: 45652535487
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 17214
 note: heartbeat
 --- mtp ---
-43:00
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 25.11.2026 17:53:00
+53:00
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 18:03:00
@@ -28,9 +25,12 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 18:53:00
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 25.11.2026 19:03:00
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-m=[0ma70e26ca-04c6-40da-84fd-3584a5bf92e0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-25T18:34:16.495544Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0ma70e26ca-04c6-40da-84fd-3584a5bf92e0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-25T18:44:18.047279Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m26ed3b33-1f01-41ae-97f1-8476110f6c4c[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0m26ed3b33-1f01-41ae-97f1-8476110f6c4c[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-25T18:44:23.296808Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m26ed3b33-1f01-41ae-97f1-8476110f6c4c[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-25T18:54:24.856546Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m65adb73e-b42f-45aa-964c-24fb580ed7d3[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-25T18:54:30.127991Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m65adb73e-b42f-45aa-964c-24fb580ed7d3[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-25T19:04:31.922067Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m8edb0b93-06da-46d4-87d7-266e79a97178[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

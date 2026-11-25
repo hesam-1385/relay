@@ -1,12 +1,11 @@
-when: 2026-11-25T10:59:17Z
+when: 2026-11-25T11:06:19Z
 run: 45549018196
 public-port: 40443
 fixed-port-target: 38841
 extra-port: 38105
-note: heartbeat
+note: bore restarted
 --- mtp ---
-from the MASK_HOST cloudflare.com, its length is 1996
-Stats for 25.11.2026 09:50:13
+50:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 10:00:13
@@ -25,6 +24,9 @@ Stats for 25.11.2026 10:40:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 10:50:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 25.11.2026 11:00:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-25T10:59:15.596351Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m40443

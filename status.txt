@@ -1,14 +1,11 @@
-when: 2026-11-25T02:08:48Z
+when: 2026-11-25T02:19:00Z
 run: 45506043265
 public-port: 10845
 fixed-port-target: 38841
 extra-port: 57833
-note: heartbeat
+note: tunnel revived
 --- mtp ---
-54:03
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 25.11.2026 01:04:03
+04:03
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 01:14:03
@@ -28,6 +25,9 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 02:04:04
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 25.11.2026 02:14:04
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-25T02:08:46.443900Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m10845
-[2m2026-11-25T02:08:46.443942Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:10845
+[2m2026-11-25T02:18:59.319972Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m10845
+[2m2026-11-25T02:18:59.320010Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:10845

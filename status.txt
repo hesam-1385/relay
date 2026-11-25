@@ -1,14 +1,11 @@
-when: 2026-11-25T13:00:52Z
+when: 2026-11-25T13:11:07Z
 run: 45595974580
 public-port: 28359
 fixed-port-target: 38841
 extra-port: 43547
-note: heartbeat
+note: tunnel revived
 --- mtp ---
-46:42
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 25.11.2026 11:56:42
+56:42
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 12:06:42
@@ -28,6 +25,11 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 12:56:42
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 25.11.2026 13:06:42
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-25T13:00:50.641684Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m28359
-[2m2026-11-25T13:00:50.641736Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:28359
+Error: timed out waiting for initial message
+
+Caused by:
+    deadline has elapsed

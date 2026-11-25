@@ -1,14 +1,11 @@
-when: 2026-11-25T02:03:36Z
+when: 2026-11-25T02:04:37Z
 run: 45506043265
 public-port: 10845
 fixed-port-target: 38841
 extra-port: 57833
 note: bore restarted
 --- mtp ---
-44:03
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 25.11.2026 00:54:03
+54:03
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 01:04:03
@@ -27,6 +24,9 @@ Stats for 25.11.2026 01:44:03
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 25.11.2026 01:54:04
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 25.11.2026 02:04:04
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 Error: frame error, invalid byte length

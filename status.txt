@@ -1,12 +1,11 @@
-when: 2026-11-26T11:41:08Z
+when: 2026-11-26T11:42:10Z
 run: 45793623778
 public-port: 57660
 fixed-port-target: 38841
 extra-port: 43989
 note: bore restarted
 --- mtp ---
-from the MASK_HOST cloudflare.com, its length is 1997
-Stats for 26.11.2026 10:31:15
+31:15
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 10:41:15
@@ -25,6 +24,9 @@ Stats for 26.11.2026 11:21:16
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 11:31:16
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 11:41:16
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 Error: could not connect to bore.pub:7835

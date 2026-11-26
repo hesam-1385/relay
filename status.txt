@@ -1,12 +1,11 @@
-when: 2026-11-26T16:48:57Z
+when: 2026-11-26T16:59:04Z
 run: 45848724309
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 24580
 note: heartbeat
 --- mtp ---
-8a71cb3f9d024e68
-hesam: tg://proxy?server=51.57.85.170&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=51.57.85.170&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
 Got cert from the MASK_HOST cloudflare.com, its length is 1996
 Stats for 26.11.2026 16:18:12
@@ -20,9 +19,12 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 16:48:12
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 16:58:12
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-26T16:31:42.345297Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
-[2m2026-11-26T16:31:42.345339Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
-[2m2026-11-26T16:38:44.993509Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m26a94d6f-52af-49f6-8572-4e27add63e6e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0m26a94d6f-52af-49f6-8572-4e27add63e6e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-26T16:38:50.465251Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m26a94d6f-52af-49f6-8572-4e27add63e6e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-26T16:48:52.265949Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m99c04d23-a54f-4ffa-9e8f-e9013eabca93[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-26T16:48:57.726628Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m99c04d23-a54f-4ffa-9e8f-e9013eabca93[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-26T16:58:59.347071Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m0f84c1e7-28ca-4d51-9d96-ce404e1bc6da[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

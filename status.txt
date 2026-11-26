@@ -1,17 +1,11 @@
-when: 2026-11-26T20:31:35Z
+when: 2026-11-26T20:41:42Z
 run: 45848724309
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 24580
 note: heartbeat
 --- mtp ---
-18:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 26.11.2026 19:28:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 26.11.2026 19:38:13
+ 26.11.2026 19:38:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 19:48:13
@@ -28,9 +22,13 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 20:28:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Got cert from the MASK_HOST cloudflare.com, its length is 1997
+Stats for 26.11.2026 20:38:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-m=[0mbe8bcba4-8292-4a2a-9ba6-f7f4dc9b5c66[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-26T20:21:28.301654Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mbe8bcba4-8292-4a2a-9ba6-f7f4dc9b5c66[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-26T20:28:12.209848Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m2fee89d5-2aaa-43f4-945b-9a46f3e0a20b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0m2fee89d5-2aaa-43f4-945b-9a46f3e0a20b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-26T20:28:13.625429Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m2fee89d5-2aaa-43f4-945b-9a46f3e0a20b[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-26T20:31:30.171670Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m5b84f8b5-ae8f-405d-bbaf-66e2debbacb8[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-26T20:31:35.505902Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m5b84f8b5-ae8f-405d-bbaf-66e2debbacb8[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-26T20:41:37.298807Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb1c21099-78fc-4c71-8fee-2b0e768393e2[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

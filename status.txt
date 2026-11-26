@@ -1,9 +1,9 @@
-when: 2026-11-26T16:31:43Z
+when: 2026-11-26T16:38:50Z
 run: 45848724309
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 24580
-note: bore restarted
+note: heartbeat
 --- mtp ---
 hesam: tg://proxy?server=51.57.85.170&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=51.57.85.170&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
@@ -14,6 +14,10 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 16:28:12
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 16:38:12
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 [2m2026-11-26T16:31:42.345297Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
 [2m2026-11-26T16:31:42.345339Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
+[2m2026-11-26T16:38:44.993509Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m26a94d6f-52af-49f6-8572-4e27add63e6e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

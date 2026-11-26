@@ -1,4 +1,4 @@
-when: 2026-11-26T16:18:33Z
+when: 2026-11-26T16:28:40Z
 run: 45848724309
 public-port: 38841
 fixed-port-target: 38841
@@ -11,9 +11,12 @@ hesam: tg://proxy?server=51.57.85.170&port=3129&secret=eee5c1a7b93d24f60e8a71cb3
 Got cert from the MASK_HOST cloudflare.com, its length is 1996
 Stats for 26.11.2026 16:18:12
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 16:28:12
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-26T16:08:18.071419Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
-[2m2026-11-26T16:08:18.071464Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
-[2m2026-11-26T16:08:18.929826Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mf8b7b87f-6433-4b84-b208-9e89fa9f3cb6[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0mf8b7b87f-6433-4b84-b208-9e89fa9f3cb6[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-26T16:08:24.104076Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mf8b7b87f-6433-4b84-b208-9e89fa9f3cb6[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-26T16:18:27.960941Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m1195621b-ff00-4169-87e4-da9210081942[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-26T16:18:33.189035Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m1195621b-ff00-4169-87e4-da9210081942[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-26T16:28:34.881268Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m6e035da6-c552-40e8-b439-7c851df65fb8[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

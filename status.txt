@@ -1,14 +1,11 @@
-when: 2026-11-26T21:22:11Z
+when: 2026-11-26T21:32:19Z
 run: 45848724309
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 24580
 note: heartbeat
 --- mtp ---
- 26.11.2026 20:18:13
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 26.11.2026 20:28:13
+ 26.11.2026 20:28:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Got cert from the MASK_HOST cloudflare.com, its length is 1997
@@ -26,9 +23,12 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 21:18:13
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 21:28:13
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-m=[0m0a9e0ccc-d890-41f4-8a0c-5e73114bd9f0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-26T21:01:56.778205Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m0a9e0ccc-d890-41f4-8a0c-5e73114bd9f0[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-26T21:11:59.855974Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0me0d545b0-82e7-4f72-9ff5-ed64310e68a9[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0me0d545b0-82e7-4f72-9ff5-ed64310e68a9[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-26T21:12:05.130046Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0me0d545b0-82e7-4f72-9ff5-ed64310e68a9[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-26T21:22:06.735217Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m5cc1421f-e75b-4168-9b2a-a62228ba0b06[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-26T21:22:11.930875Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m5cc1421f-e75b-4168-9b2a-a62228ba0b06[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-26T21:32:13.526595Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m97df6bcb-d26a-4e44-a4fc-d43822e4abfc[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

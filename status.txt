@@ -1,12 +1,11 @@
-when: 2026-11-26T22:53:34Z
+when: 2026-11-26T23:03:41Z
 run: 45896090839
 public-port: 38841
 fixed-port-target: 38841
 extra-port: 2789
 note: heartbeat
 --- mtp ---
-ecret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
-Got cert from the MASK_HOST cloudflare.com, its length is 1998
+from the MASK_HOST cloudflare.com, its length is 1998
 Stats for 26.11.2026 22:02:42
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
@@ -24,9 +23,12 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 22:52:43
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 23:02:43
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-m=[0m720107ef-cbb9-46e0-bc5b-bffcc704b21e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-26T22:33:21.004942Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m720107ef-cbb9-46e0-bc5b-bffcc704b21e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-26T22:43:22.475835Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb1f60350-b907-4702-be68-16734040d01e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+m=[0mb1f60350-b907-4702-be68-16734040d01e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
 [2m2026-11-26T22:43:27.725837Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mb1f60350-b907-4702-be68-16734040d01e[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
 [2m2026-11-26T22:53:29.498033Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m4b46bd48-a31f-4230-b026-7ed72b160f0c[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-26T22:53:34.756436Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m4b46bd48-a31f-4230-b026-7ed72b160f0c[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-26T23:03:36.203512Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m58dd2058-60ec-4b88-9a67-f7c7c7fd2d12[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection

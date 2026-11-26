@@ -1,14 +1,11 @@
-when: 2026-11-26T04:21:16Z
+when: 2026-11-26T04:22:18Z
 run: 45709920609
 public-port: 45962
 fixed-port-target: 38841
 extra-port: 10687
 note: bore restarted
 --- mtp ---
-08:05
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 26.11.2026 03:18:05
+ 26.11.2026 03:18:05
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 03:28:05
@@ -28,6 +25,8 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 04:18:05
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Got cert from the MASK_HOST cloudflare.com, its length is 1996
 --- bore ---
 Error: timed out waiting for initial message
 

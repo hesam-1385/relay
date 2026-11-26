@@ -1,14 +1,11 @@
-when: 2026-11-26T10:13:54Z
+when: 2026-11-26T10:14:56Z
 run: 45751448923
 public-port: 22807
 fixed-port-target: 38841
 extra-port: 34456
-note: heartbeat
+note: bore restarted
 --- mtp ---
- 26.11.2026 09:04:46
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 26.11.2026 09:14:46
+ 26.11.2026 09:14:46
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 09:24:46
@@ -25,6 +22,9 @@ Stats for 26.11.2026 09:54:46
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 10:04:46
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 10:14:46
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
 Error: timed out waiting for initial message

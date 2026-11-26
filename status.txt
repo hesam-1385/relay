@@ -1,14 +1,11 @@
-when: 2026-11-26T12:15:57Z
+when: 2026-11-26T12:26:13Z
 run: 45793623778
 public-port: 57660
 fixed-port-target: 38841
 extra-port: 43989
 note: tunnel revived
 --- mtp ---
-01:16
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 26.11.2026 11:11:16
+11:16
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 11:21:16
@@ -28,6 +25,11 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 26.11.2026 12:11:16
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 26.11.2026 12:21:16
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-26T12:15:56.825715Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m57660
-[2m2026-11-26T12:15:56.825760Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:57660
+Error: timed out waiting for initial message
+
+Caused by:
+    deadline has elapsed

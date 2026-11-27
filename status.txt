@@ -1,33 +1,16 @@
-when: 2026-11-27T09:16:41Z
-run: 45930943854
-public-port: 40421
+when: 2026-11-27T09:25:06Z
+run: 45967409976
+public-port: 38841
 fixed-port-target: 38841
-extra-port: 37465
-note: heartbeat
+extra-port: 52782
+note: started
 --- mtp ---
-58:02
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 08:08:02
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 08:18:02
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 08:28:02
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 08:38:03
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 08:48:03
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 08:58:03
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
-
-Stats for 27.11.2026 09:08:03
-hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+hesam: tg://proxy?server=74.235.127.169&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=74.235.127.169&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
+hesam: tg://proxy?server=74.235.127.169&port=3129&secret=eee5c1a7b93d24f60e8a71cb3f9d024e68636c6f7564666c6172652e636f6d
+Got cert from the MASK_HOST cloudflare.com, its length is 1997
 --- bore ---
-[2m2026-11-27T09:16:39.351504Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m40421
-[2m2026-11-27T09:16:39.351525Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:40421
+[2m2026-11-27T09:24:58.804612Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m38841
+[2m2026-11-27T09:24:58.804653Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:38841
+[2m2026-11-27T09:24:59.685150Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m6db83610-4e7e-42a8-a9bb-6cc0976032bc[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-27T09:25:04.715731Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m6db83610-4e7e-42a8-a9bb-6cc0976032bc[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited

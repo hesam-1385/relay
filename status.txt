@@ -1,12 +1,11 @@
-when: 2026-11-27T22:09:17Z
+when: 2026-11-27T22:18:18Z
 run: 46061999531
 public-port: 1476
 fixed-port-target: 38841
 extra-port: 49530
-note: heartbeat
+note: bore restarted
 --- mtp ---
-from the MASK_HOST cloudflare.com, its length is 1997
-Stats for 27.11.2026 21:06:14
+06:14
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 27.11.2026 21:16:14
@@ -26,6 +25,12 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 
 Stats for 27.11.2026 22:06:14
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
+
+Stats for 27.11.2026 22:16:14
+hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-[2m2026-11-27T22:09:15.119501Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m1476
-[2m2026-11-27T22:09:15.119525Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:1476
+:client[0m[2m:[0m connection exited
+[2m2026-11-27T22:14:57.748291Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m53dd90d2-3914-4834-959c-a0784090ac01[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-27T22:14:58.612945Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m53dd90d2-3914-4834-959c-a0784090ac01[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
+[2m2026-11-27T22:17:44.680083Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mcf1da946-63d4-4202-bec2-79490a18099a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
+[2m2026-11-27T22:18:02.158503Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mcf1da946-63d4-4202-bec2-79490a18099a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)

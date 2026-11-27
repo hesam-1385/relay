@@ -1,9 +1,9 @@
-when: 2026-11-27T22:19:20Z
+when: 2026-11-27T22:19:24Z
 run: 46061999531
 public-port: 1476
 fixed-port-target: 38841
 extra-port: 49530
-note: bore restarted
+note: tunnel revived
 --- mtp ---
 06:14
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
@@ -29,8 +29,5 @@ hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 Stats for 27.11.2026 22:16:14
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs
 --- bore ---
-:client[0m[2m:[0m connection exited
-[2m2026-11-27T22:14:57.748291Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m53dd90d2-3914-4834-959c-a0784090ac01[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-27T22:14:58.612945Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0m53dd90d2-3914-4834-959c-a0784090ac01[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited
-[2m2026-11-27T22:17:44.680083Z[0m [32m INFO[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mcf1da946-63d4-4202-bec2-79490a18099a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m new connection
-[2m2026-11-27T22:18:02.158503Z[0m [33m WARN[0m [1mproxy[0m[1m{[0m[3mid[0m[2m=[0mcf1da946-63d4-4202-bec2-79490a18099a[1m}[0m[2m:[0m [2mbore_cli::client[0m[2m:[0m connection exited with error [3merr[0m[2m=[0mConnection reset by peer (os error 104)
+[2m2026-11-27T22:19:23.753957Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m connected to server [3mremote_port[0m[2m=[0m1476
+[2m2026-11-27T22:19:23.753983Z[0m [32m INFO[0m [2mbore_cli::client[0m[2m:[0m listening at bore.pub:1476

@@ -1,9 +1,9 @@
-when: 2026-11-28T10:03:40Z
+when: 2026-11-28T10:03:41Z
 run: 46123153020
 public-port: 21407
 fixed-port-target: 38841
 extra-port: 36051
-note: tunnel revived
+note: heartbeat
 --- mtp ---
 49:43
 hesam: 0 connects (0 current), 0.00 MB, 0 msgs

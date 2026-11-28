@@ -1,9 +1,9 @@
-when: 2026-11-28T08:52:08Z
+when: 2026-11-28T08:55:09Z
 run: 46123153020
 public-port: 21407
 fixed-port-target: 38841
 extra-port: 36051
-note: heartbeat
+note: bore restarted
 --- mtp ---
 hesam: tg://proxy?server=74.249.181.200&port=3129&secret=e5c1a7b93d24f60e8a71cb3f9d024e68
 hesam: tg://proxy?server=74.249.181.200&port=3129&secret=dde5c1a7b93d24f60e8a71cb3f9d024e68
